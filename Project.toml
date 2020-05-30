@@ -1,0 +1,13 @@
+name = "FusionSystems"
+uuid = "f78baae1-78cd-4069-8705-3f3564aaf290"
+authors = ["Dan Segal <dansegal2@gmail.com> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
