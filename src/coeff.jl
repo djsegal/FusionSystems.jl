@@ -1,7 +1,9 @@
 coeff_list = [
   "K_b", "K_beta", "K_BS", "K_CD",
   "K_F", "K_G", "K_I", "K_n", "K_T",
-  "C_B"
+  "C_B", "epsilon_B", "K_H", "K_L",
+  "a", "c", "f_B", "Tau", "K_tau",
+  "G", "K_OH", "zeta", "D", "K_omega"
 ]
 
 macro coeff(block)
