@@ -28,11 +28,18 @@
 
   function_roots = find_zeros(root_function, R_0_min, R_0_max)
 
-  if isempty(function_roots)
+  valid_roots = []
+
+  for work_R_0 in function_roots
+    is_valid(reactor, work_R_0, B_0) || continue
+    push!(valid_roots, work_R_0)
+  end
+
+  if isempty(valid_roots)
     reactor.R_0 = NaN
   else
-    # just use largest reactor
-    chosen_R_0 = function_roots[end]
+    @assert length(valid_roots) == 1
+    chosen_R_0 = first(valid_roots)
 
     reactor.R_0 = chosen_R_0
 

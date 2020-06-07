@@ -8,7 +8,13 @@
   equation = LHS - RHS
 
   try
-    reactor.R_0 = find_zero(equation, (R_0_min, R_0_max))
+    work_R_0 = find_zero(equation, (R_0_min, R_0_max))
+
+    if is_valid(reactor, work_R_0, B_0)
+      reactor.R_0 = work_R_0
+    else
+      reactor.R_0 = NaN
+    end
   catch
     reactor.R_0 = NaN
   end

@@ -1,5 +1,6 @@
 const SolvedVariable = Union{AbstractFloat, SymEngine.Basic}
 const InputVariable = Union{AbstractFloat}
+const OutputVariable = Union{AbstractFloat, Nothing}
 
 mutable struct Reactor
   solved::Bool
@@ -32,6 +33,12 @@ mutable struct Reactor
   B_max_hat::InputVariable
   sigma_max_hat::InputVariable
   tau_P::InputVariable
+
+  q_star::OutputVariable
+  P_W::OutputVariable
+  h_para::OutputVariable
+  cost::OutputVariable
+  B_C::OutputVariable
 end
 
 function Reactor(;
@@ -64,7 +71,7 @@ function Reactor(;
     Q, f_D, eta_CD, B_max, P_F, b,
     nu_n, nu_T, nu_J, eta_T, eta_RF,
     sigma_max, B_max_hat, sigma_max_hat,
-    tau_P
+    tau_P, repeat([nothing], 5)...
   )
 end
 
