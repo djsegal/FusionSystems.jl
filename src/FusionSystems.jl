@@ -3,6 +3,8 @@ module FusionSystems
   using Roots
   using SymEngine
 
+  using SimplePlots
+
   using ImportMacros
   @import SpecialFunctions.gamma as Gamma
 
@@ -25,6 +27,7 @@ module FusionSystems
 
   include("reactor.jl")
   include("coeff.jl")
+  include("scan.jl")
 
   include("decks/index.jl")
   include("coeffs/index.jl")
