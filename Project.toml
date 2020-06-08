@@ -11,6 +11,7 @@ SpecialFunctions = "276daf66-3868-5448-9aa4-cd146d93841b"
 SymEngine = "123dc426-2d89-5057-bbad-38513e3affd8"
 
 [compat]
+SimplePlots = "0.1"
 julia = "1"
 
 [extras]
