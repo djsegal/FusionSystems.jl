@@ -272,6 +272,6 @@ version = "1.2.1"
 
 [[ZeroMQ_jll]]
 deps = ["Libdl", "Pkg"]
-git-tree-sha1 = "ac15b32cf384a72b058f3c214708e5a11a91ac86"
+git-tree-sha1 = "733352667c60ce39dfd3017db9b798b288c87417"
 uuid = "8f1865be-045e-5c20-9c9f-bfbfb0764568"
-version = "4.3.2+3"
+version = "4.3.2+4"
