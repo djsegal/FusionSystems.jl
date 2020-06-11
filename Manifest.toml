@@ -191,9 +191,11 @@ uuid = "1a1011a3-84de-559e-8e89-a11a2f7dc383"
 
 [[SimplePlots]]
 deps = ["DataStructures", "IJulia", "JSON", "Observables", "Printf", "UUIDs", "UnicodePlots"]
-git-tree-sha1 = "649af57fbd3f53fcc1ef3a3184f36a2381e188a4"
+git-tree-sha1 = "72666a84cae44876c41a4563c8e8fe14040a3751"
+repo-rev = "master"
+repo-url = "https://github.com/djsegal/SimplePlots.jl.git"
 uuid = "307c2aad-90be-4152-b348-f51955fac6ce"
-version = "0.1.0"
+version = "0.2.1"
 
 [[Sockets]]
 uuid = "6462fe0b-24de-5631-8697-dd941f90decc"
@@ -272,6 +274,6 @@ version = "1.2.1"
 
 [[ZeroMQ_jll]]
 deps = ["Libdl", "Pkg"]
-git-tree-sha1 = "ac15b32cf384a72b058f3c214708e5a11a91ac86"
+git-tree-sha1 = "733352667c60ce39dfd3017db9b798b288c87417"
 uuid = "8f1865be-045e-5c20-9c9f-bfbfb0764568"
-version = "4.3.2+3"
+version = "4.3.2+4"
