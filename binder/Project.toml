@@ -1,0 +1,3 @@
+[deps]
+FusionSystems = "f78baae1-78cd-4069-8705-3f3564aaf290"
+SimplePlots = "307c2aad-90be-4152-b348-f51955fac6ce"
