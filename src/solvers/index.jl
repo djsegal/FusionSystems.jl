@@ -8,7 +8,7 @@ include("calc_q_star.jl")
 include("calc_p_w.jl")
 include("calc_h_para.jl")
 include("calc_cost.jl")
-include("calc_B_C.jl")
+include("calc_b_c.jl")
 
 include("solve.jl")
 include("update.jl")
