@@ -1,4 +1,4 @@
-@coeff function solve!(reactor::Reactor)
+@coeff function solve!(reactor::Reactor, R_0_guess=nothing)
   @assert !reactor.solved
 
   @assert isa(R_0, SymEngine.Basic)
@@ -7,7 +7,7 @@
   if reactor.steady
     solve_steady!(reactor)
   else
-    solve_pulsed!(reactor)
+    solve_pulsed!(reactor, R_0_guess)
   end
 
   if isnan(reactor.R_0)

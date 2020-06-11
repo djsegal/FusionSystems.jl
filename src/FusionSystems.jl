@@ -25,10 +25,10 @@ module FusionSystems
 
   const mu_0 = 4 * pi * 1e-7
 
-  include("reactor.jl")
   include("coeff.jl")
-  include("scan.jl")
+  include("bisection_indices.jl")
 
+  include("structs/index.jl")
   include("decks/index.jl")
   include("coeffs/index.jl")
   include("solvers/index.jl")

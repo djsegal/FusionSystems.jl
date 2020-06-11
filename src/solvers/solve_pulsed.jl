@@ -1,4 +1,4 @@
-@coeff function solve_pulsed!(reactor::Reactor)
+@coeff function solve_pulsed!(reactor::Reactor, R_0_guess=nothing)
   LHS_this = log((1+epsilon_B)/(1-epsilon_B))/(1-epsilon_B)
   LHS_that = 4*epsilon_B/(1-epsilon_B^2)
 
@@ -23,16 +23,34 @@
       tmp_error = subs(tmp_error, symbols(:nu_J) => tmp_nu_J)
     end
 
-    real(tmp_error)
+    float(real(tmp_error))
   end
 
-  function_roots = find_zeros(root_function, R_0_min, R_0_max)
+  if isnothing(R_0_guess) || isnan(R_0_guess)
+    valid_roots = []
+  else
+    work_R_0 = NaN
 
-  valid_roots = []
+    try
+      work_R_0 = find_zero(root_function, R_0_guess)
+    catch cur_error
+      isa(cur_error, DomainError) || rethrow(cur_error)
+    end
 
-  for work_R_0 in function_roots
-    is_valid(reactor, work_R_0, B_0) || continue
-    push!(valid_roots, work_R_0)
+    if is_valid(reactor, work_R_0, B_0)
+      valid_roots = [work_R_0]
+    else
+      valid_roots = []
+    end
+  end
+
+  if isempty(valid_roots)
+    function_roots = find_zeros(root_function, R_0_min, R_0_max)
+
+    for work_R_0 in function_roots
+      is_valid(reactor, work_R_0, B_0) || continue
+      push!(valid_roots, work_R_0)
+    end
   end
 
   if isempty(valid_roots)

@@ -1,4 +1,9 @@
 function is_valid(reactor, R_0, B_0)
+  isnan(R_0) && return false
+
+  ( R_0 < R_0_min ) && return false
+  ( R_0 > R_0_max ) && return false
+
   checked_fields = [:H, :I_M, :n_20, :nu_J, :T_k, :B_C]
 
   tmp_is_valid = true
