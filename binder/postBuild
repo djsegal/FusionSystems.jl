@@ -1,0 +1,2 @@
+julia -e "using SimplePlots"
+julia -e "using FusionSystems"
