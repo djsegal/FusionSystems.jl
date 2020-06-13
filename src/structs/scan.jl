@@ -62,7 +62,7 @@ function plot(scan::Scan, x::Symbol, y::Symbol)
   deleteat!(yy, delete_indices)
 
   @assert length(xx) == length(yy)
-  SimplePlots.plot!(xx, yy, label="")
+  SimplePlots.plot(xx, yy, label="")
 
   xlabel!(String(x))
   ylabel!(String(y))
