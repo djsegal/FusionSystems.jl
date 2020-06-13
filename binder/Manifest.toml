@@ -54,7 +54,7 @@ uuid = "7b1f6079-737a-58dc-b8bc-7a2ca5c1b5ee"
 
 [[FusionSystems]]
 deps = ["ImportMacros", "Roots", "SimplePlots", "SpecialFunctions", "SymEngine"]
-git-tree-sha1 = "55c0af4098f603f16d646aa59ea1c3e36df37c82"
+git-tree-sha1 = "40aac55f5922a06ff538fc5178e060c3eb0c15ec"
 repo-rev = "master"
 repo-url = "https://github.com/djsegal/FusionSystems.jl.git"
 uuid = "f78baae1-78cd-4069-8705-3f3564aaf290"
@@ -183,9 +183,9 @@ version = "1.0.1"
 
 [[Roots]]
 deps = ["Printf"]
-git-tree-sha1 = "955ce06c1f424ca7043c7827f5cb14d8eb397065"
+git-tree-sha1 = "c2f7348c55d1433d1cab0159b4d2c6d27af36fc4"
 uuid = "f2b01f46-fcfa-551c-844a-d8ac1e96c665"
-version = "1.0.1"
+version = "1.0.2"
 
 [[SHA]]
 uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
