@@ -1,6 +1,2 @@
-julia -e "using Pkg; Pkg.rm(\"SimplePlots\")"
-julia -e "using Pkg; Pkg.rm(\"FusionSystems\")"
-julia -e "using Pkg; Pkg.add(PackageSpec(path=\"https://github.com/djsegal/SimplePlots.jl.git\"))"
-julia -e "using Pkg; Pkg.add(PackageSpec(path=\"https://github.com/djsegal/FusionSystems.jl.git\"))"
-julia -e "using SimplePlots"
-julia -e "using FusionSystems"
+julia -e "using Pkg; Pkg.add(PackageSpec(path=\"https://github.com/djsegal/FusionSystems.jl.git\")); using FusionSystems"
+julia -e "using Pkg; Pkg.add(PackageSpec(path=\"https://github.com/djsegal/SimplePlots.jl.git\")); using SimplePlots"

@@ -1,3 +1,11 @@
 [deps]
-FusionSystems = "f78baae1-78cd-4069-8705-3f3564aaf290"
-SimplePlots = "307c2aad-90be-4152-b348-f51955fac6ce"
+DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
+IJulia = "7073ff75-c697-5162-941a-fcdaad2a7d2a"
+ImportMacros = "92a963f6-6b1d-11e9-1d6c-8d25856e017b"
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+Observables = "510215fc-4207-5dde-b226-833fc4488ee2"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Roots = "f2b01f46-fcfa-551c-844a-d8ac1e96c665"
+SymEngine = "123dc426-2d89-5057-bbad-38513e3affd8"
+UUIDs = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
+UnicodePlots = "b8865327-cd53-5732-bb35-84acbb429228"

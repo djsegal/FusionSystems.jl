@@ -52,14 +52,6 @@ uuid = "8ba89e20-285c-5b6f-9357-94700520ee1b"
 [[FileWatching]]
 uuid = "7b1f6079-737a-58dc-b8bc-7a2ca5c1b5ee"
 
-[[FusionSystems]]
-deps = ["ImportMacros", "Roots", "SimplePlots", "SpecialFunctions", "SymEngine"]
-git-tree-sha1 = "55c0af4098f603f16d646aa59ea1c3e36df37c82"
-repo-rev = "master"
-repo-url = "https://github.com/djsegal/FusionSystems.jl.git"
-uuid = "f78baae1-78cd-4069-8705-3f3564aaf290"
-version = "0.1.0"
-
 [[GMP_jll]]
 deps = ["Libdl", "Pkg"]
 git-tree-sha1 = "4dd9301d3a027c05ec403e756ee7a60e3c367e5d"
@@ -183,9 +175,9 @@ version = "1.0.1"
 
 [[Roots]]
 deps = ["Printf"]
-git-tree-sha1 = "955ce06c1f424ca7043c7827f5cb14d8eb397065"
+git-tree-sha1 = "c2f7348c55d1433d1cab0159b4d2c6d27af36fc4"
 uuid = "f2b01f46-fcfa-551c-844a-d8ac1e96c665"
-version = "1.0.1"
+version = "1.0.2"
 
 [[SHA]]
 uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
@@ -196,14 +188,6 @@ uuid = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
 [[SharedArrays]]
 deps = ["Distributed", "Mmap", "Random", "Serialization"]
 uuid = "1a1011a3-84de-559e-8e89-a11a2f7dc383"
-
-[[SimplePlots]]
-deps = ["DataStructures", "IJulia", "JSON", "Observables", "Printf", "UUIDs", "UnicodePlots"]
-git-tree-sha1 = "302b980c6a750f8e671c744c3079969c347b8963"
-repo-rev = "master"
-repo-url = "https://github.com/djsegal/SimplePlots.jl.git"
-uuid = "307c2aad-90be-4152-b348-f51955fac6ce"
-version = "0.2.2"
 
 [[Sockets]]
 uuid = "6462fe0b-24de-5631-8697-dd941f90decc"
